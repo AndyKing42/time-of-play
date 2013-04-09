@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 @SuppressWarnings("serial")
-public class TOPRequestFactoryServlet extends RequestFactoryServlet {
+public class TimeOfPlayRequestFactoryServlet extends RequestFactoryServlet {
 //--------------------------------------------------------------------------------------------------
 @Override
 protected void doPost(final HttpServletRequest request, final HttpServletResponse response)

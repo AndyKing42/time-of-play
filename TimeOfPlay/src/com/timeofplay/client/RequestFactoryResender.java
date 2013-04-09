@@ -1,6 +1,7 @@
 package com.timeofplay.client;
 
 import com.google.web.bindery.requestfactory.shared.RequestTransport.TransportReceiver;
+import com.timeofplay.shared.IUserRequestContext;
 /**
  * This class is used to store information about the last request that was sent using request
  * factory. If there is a need to resend the request (for example, if the request failed because of
@@ -54,9 +55,9 @@ RequestFactoryResender(final IClientFactory clientFactory) {
  */
 public void resend() {
   _resend = true;
-  //  IUserRequestContext _userRequestContext; // this could have been any request context
-  //  _userRequestContext = _clientFactory.getRequestFactory().newUserRequestContext();
-  //  _userRequestContext.save(null).fire(); // this could have been any request
+  final IUserRequestContext _userRequestContext; // this could have been any request context
+  _userRequestContext = _clientFactory.getRequestFactory().newUserRequestContext();
+  _userRequestContext.save(null).fire(); // this could have been any request
 } // resend()
 //--------------------------------------------------------------------------------------------------
 }
