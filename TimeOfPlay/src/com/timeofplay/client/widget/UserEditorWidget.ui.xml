@@ -1,0 +1,15 @@
+<ui:UiBinder
+  xmlns:ui='urn:ui:com.google.gwt.uibinder'
+  xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+  <g:VerticalPanel>
+    <g:HorizontalPanel>
+      <g:Label>User Id</g:Label>
+      <g:TextBox ui:field='userIdTextBox'></g:TextBox>
+      <g:Button ui:field='changePasswordButton'>Change Password</g:Button>
+    </g:HorizontalPanel>
+    <g:HorizontalPanel>
+      <g:Label>ScreenName</g:Label>
+      <g:TextBox ui:field='screenNameTextBox'></g:TextBox>
+    </g:HorizontalPanel>
+  </g:VerticalPanel>
+</ui:UiBinder>

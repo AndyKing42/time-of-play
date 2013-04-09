@@ -7,9 +7,9 @@ import com.greatlogic.glbase.gldb.GLSQL;
 import com.greatlogic.glbase.gllib.BCrypt;
 import com.greatlogic.glbase.gllib.GLLibEnums.EGLLogLevel;
 import com.greatlogic.glbase.gllib.GLLog;
-import com.timeofplay.server.TimeOfPlayServerEnums.ETimeOfPlaySequence;
-import com.timeofplay.server.TimeOfPlayServerEnums.ETimeOfPlayTable;
-import com.timeofplay.server.TimeOfPlayServerEnums.UserCol;
+import com.timeofplay.server.ITimeOfPlayServerEnums.ETimeOfPlaySequence;
+import com.timeofplay.server.ITimeOfPlayServerEnums.ETimeOfPlayTable;
+import com.timeofplay.server.ITimeOfPlayServerEnums.UserCol;
 import com.timeofplay.server.model.dto.User;
 import java.util.List;
 
