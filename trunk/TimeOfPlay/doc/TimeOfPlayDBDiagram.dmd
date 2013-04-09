@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="TimeOfPlayDBDiagram" id="CE5DA692-F773-E080-FF12-DC5E98F31242" version="3.4">
+   <createdBy>aking</createdBy>
+   <createdTime>2011-09-26 19:09:17 UTC</createdTime>
+   <changedBy>aking</changedBy>
+   <changedTime>2011-09-26 23:12:00 UTC</changedTime>
+   <ownerDesignName>FosterAPetDBDiagram</ownerDesignName>
+   <capitalNames>false</capitalNames>
+   <designId>CE5DA692-F773-E080-FF12-DC5E98F31242</designId>
+</OSDM_Design>

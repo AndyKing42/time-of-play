@@ -17,7 +17,7 @@ private Integer _id;
 private String  _passwordHash;
 @Column(length = 50, name = "ScreenName", nullable = false)
 private String  _screenName;
-@Column(length = 50, name = "UserId", nullable = false)
+@Column(length = 50, name = "UserId", nullable = false, unique = true)
 private String  _userId;
 @Column(name = "Version", nullable = false)
 private Integer _version;
