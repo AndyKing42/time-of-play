@@ -1,14 +1,17 @@
 <!DOCTYPE ui:UiBinder SYSTEM 'http://dl.google.com/gwt/DTD/xhtml.ent'>
 <ui:UiBinder
   xmlns:ui='urn:ui:com.google.gwt.uibinder'
-  xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+  xmlns:g='urn:import:com.google.gwt.user.client.ui'
+  xmlns:top='urn:import:com.timeofplay.client.widget'>
   <g:ResizeLayoutPanel ui:field='topLevelPanel'>
     <g:TabLayoutPanel
       barUnit='EM'
       barHeight='3'>
       <g:tab>
         <g:header>My Account</g:header>
-        <g:ResizeLayoutPanel/>
+        <g:ResizeLayoutPanel>
+          <top:UserEditorWidget ui:field='userEditorWidget'/>
+        </g:ResizeLayoutPanel>
       </g:tab>
       <g:tab>
         <g:header>My Events</g:header>

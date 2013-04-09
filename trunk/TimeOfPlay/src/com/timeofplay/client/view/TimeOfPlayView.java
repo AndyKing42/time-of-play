@@ -7,11 +7,14 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.ResizeLayoutPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.timeofplay.client.IClientFactory;
+import com.timeofplay.client.widget.UserEditorWidget;
 
 public class TimeOfPlayView extends Composite {
 //--------------------------------------------------------------------------------------------------
 @UiField
 ResizeLayoutPanel      topLevelPanel;
+@UiField(provided = true)
+UserEditorWidget       userEditorWidget;
 
 private IClientFactory _clientFactory;
 //==================================================================================================
@@ -24,6 +27,7 @@ public ResizeLayoutPanel getTopLevelPanel() {
 //--------------------------------------------------------------------------------------------------
 public void initialize(final IClientFactory clientFactory) {
   _clientFactory = clientFactory;
+  userEditorWidget = new UserEditorWidget(_clientFactory);
   final ITimeOfPlayViewUiBinder binder = GWT.create(ITimeOfPlayViewUiBinder.class);
   binder.createAndBindUi(this);
 } // initialize()
