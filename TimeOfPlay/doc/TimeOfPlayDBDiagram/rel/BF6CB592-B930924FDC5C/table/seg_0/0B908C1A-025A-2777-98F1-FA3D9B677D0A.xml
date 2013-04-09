@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="0B908C1A-025A-2777-98F1-FA3D9B677D0A" directorySegmentName="seg_0" name="User">
+   <createdBy>aking</createdBy>
+   <createdTime>2011-09-26 21:01:39 UTC</createdTime>
+   <changedBy>aking</changedBy>
+   <changedTime>2013-04-09 17:08:34 UTC</changedTime>
+   <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+   <pkName>DomainUser_PK</pkName>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Title</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Column</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Datatype</foType>
+         <colorRGB>-16744448</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>PK Element</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>FK Element</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>UK Element</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Not Null</foType>
+         <colorRGB>-65536</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Key</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+   </fonts>
+   <columns>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="PasswordHash" id="E50595B7-779C-C681-1FA3-8CE078D2D9CC">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 15:52:08 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:19:12 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>200</dataTypeSize>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="RegistrationDate" id="B90A1CB5-0B1C-1804-D20C-CC5A93EE62BC">
+         <createdBy>aking</createdBy>
+         <createdTime>2011-09-27 20:36:45 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 15:51:00 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="ScreenName" id="278E29E4-545B-76C4-0AFF-4F8B4DDD6A87">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 15:52:59 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 15:52:59 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>50</dataTypeSize>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="UserId" id="5DD6445E-5B87-0C07-8EC5-6E0FE12820AE">
+         <createdBy>aking</createdBy>
+         <createdTime>2011-09-26 21:02:02 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:14:59 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="UserLoginId" id="00A7613A-B078-57CF-2B55-772CF2D6AF0F">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 15:53:29 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:14:51 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>50</dataTypeSize>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="Version" id="1209F3ED-96D8-5BB2-D1B4-5834F34DB11B">
+         <createdBy>aking</createdBy>
+         <createdTime>2011-09-26 21:05:19 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 15:51:31 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Column>
+   </columns>
+   <indexes>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="750FF167-E420-1C6C-C400-7DF21CFA1735" name="DomainUser_PK">
+         <createdBy>aking</createdBy>
+         <createdTime>2011-09-26 21:02:02 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2011-09-26 21:02:02 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <pk>true</pk>
+         <indexState>Primary Constraint</indexState>
+         <indexColumnUsage>
+            <colUsage columnID="5DD6445E-5B87-0C07-8EC5-6E0FE12820AE"/>
+         </indexColumnUsage>
+      </ind_PK_UK>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="1DB203B1-ABA5-CED2-7DFD-8919E96C8B21" name="UserAK1">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 15:55:06 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 15:55:06 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <indexState>Unique Plain Index</indexState>
+         <indexColumnUsage>
+            <colUsage columnID="00A7613A-B078-57CF-2B55-772CF2D6AF0F"/>
+         </indexColumnUsage>
+      </ind_PK_UK>
+   </indexes>
+</Table>

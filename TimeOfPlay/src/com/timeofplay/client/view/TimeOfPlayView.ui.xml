@@ -9,9 +9,17 @@
       barHeight='3'>
       <g:tab>
         <g:header>My Account</g:header>
-        <g:ResizeLayoutPanel>
+        <g:HeaderPanel>
           <top:UserEditorWidget ui:field='userEditorWidget'/>
-        </g:ResizeLayoutPanel>
+          <g:SplitLayoutPanel>
+            <g:west size='100'>
+              <g:ResizeLayoutPanel/>
+            </g:west>
+            <g:center>
+              <g:ResizeLayoutPanel/>
+            </g:center>
+          </g:SplitLayoutPanel>
+        </g:HeaderPanel>
       </g:tab>
       <g:tab>
         <g:header>My Events</g:header>

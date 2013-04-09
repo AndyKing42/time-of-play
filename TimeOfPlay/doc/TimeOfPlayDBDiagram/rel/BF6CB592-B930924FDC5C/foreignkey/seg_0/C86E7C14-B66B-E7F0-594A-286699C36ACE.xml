@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="C86E7C14-B66B-E7F0-594A-286699C36ACE" directorySegmentName="seg_0" name="CircleUser_Circle_FK">
+   <createdBy>aking</createdBy>
+   <createdTime>2013-04-09 16:21:52 UTC</createdTime>
+   <changedBy>aking</changedBy>
+   <changedTime>2013-04-09 16:21:52 UTC</changedTime>
+   <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+   <containerWithKeyObject>88A98EEC-AC15-294B-7610-68D01E717941</containerWithKeyObject>
+   <deleteRule>RESTRICT</deleteRule>
+   <localFKIndex>F07B5C1A-B0E1-B896-8CD7-06DC23DF4EEC</localFKIndex>
+   <keyObject>EE0A6AF9-3B25-75D0-5B91-A674FD810C83</keyObject>
+   <mandatory>true</mandatory>
+   <transferable>true</transferable>
+</FKIndexAssociation>

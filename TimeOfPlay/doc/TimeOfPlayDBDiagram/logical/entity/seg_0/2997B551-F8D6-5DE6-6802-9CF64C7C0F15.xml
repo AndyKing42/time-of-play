@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="2997B551-F8D6-5DE6-6802-9CF64C7C0F15" directorySegmentName="seg_0" name="DomainUser">
+   <createdBy>aking</createdBy>
+   <createdTime>2011-09-26 21:21:13 UTC</createdTime>
+   <changedBy>aking</changedBy>
+   <changedTime>2011-09-26 21:21:13 UTC</changedTime>
+   <generatorID>0B908C1A-025A-2777-98F1-FA3D9B677D0A</generatorID>
+   <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+   <pkName>DomainUser_PK</pkName>
+   <adequatelyNormalized>NO</adequatelyNormalized>
+   <expectedVolumes>0</expectedVolumes>
+   <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+   <growthPercent>0</growthPercent>
+   <growthType>Year</growthType>
+   <maxVolumes>9999999</maxVolumes>
+   <minVolumes>0</minVolumes>
+   <normalForm>Third</normalForm>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Title</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Attribute</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Datatype</foType>
+         <colorRGB>-16744448</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>PK Element</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>FK Element</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>UK Element</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Not Null</foType>
+         <colorRGB>-65536</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Key</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+   </fonts>
+   <attributes>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="id" id="94B911F2-BD8F-DCC8-81D9-997ECEC477CF">
+         <createdBy>aking</createdBy>
+         <createdTime>2011-09-26 21:21:13 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2011-09-26 21:21:13 UTC</changedTime>
+         <generatorID>5DD6445E-5B87-0C07-8EC5-6E0FE12820AE</generatorID>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="domainId" id="6E86D0CE-B5FD-0A93-274B-A9B7B26104F9">
+         <createdBy>aking</createdBy>
+         <createdTime>2011-09-26 21:21:13 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2011-09-26 21:21:13 UTC</changedTime>
+         <generatorID>4B22C8CB-383F-9743-BAA5-13EC9706D69D</generatorID>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <referedAttribute>F45157AC-03EE-BC10-9D65-01CAD873F700</referedAttribute>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <propertyMap>
+            <property name="refers.attribute" value="F45157AC-03EE-BC10-9D65-01CAD873F700"/>
+         </propertyMap>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="registeredUserId" id="F6EB401B-1734-F578-046C-E88421C11453">
+         <createdBy>aking</createdBy>
+         <createdTime>2011-09-26 21:21:13 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2011-09-26 21:21:13 UTC</changedTime>
+         <generatorID>1B455729-15D9-DD27-5563-A04A9BB99277</generatorID>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <referedAttribute>EC1A0A61-23A6-AA83-0A37-276E1C8EE54E</referedAttribute>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Attribute>
+      <Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="version" id="3D1EFA3F-98AB-1EB8-DFBC-FFAC3659FAE8">
+         <createdBy>aking</createdBy>
+         <createdTime>2011-09-26 21:21:13 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2011-09-26 21:21:13 UTC</changedTime>
+         <generatorID>1209F3ED-96D8-5BB2-D1B4-5834F34DB11B</generatorID>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>30</dataTypeSize>
+      </Attribute>
+   </attributes>
+   <identifiers>
+      <identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="6B5710D9-917B-1260-AC16-A8E9277F85DC" name="DomainUser_PK">
+         <createdBy>aking</createdBy>
+         <createdTime>2011-09-26 21:21:13 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2011-09-26 21:21:13 UTC</changedTime>
+         <generatorID>750FF167-E420-1C6C-C400-7DF21CFA1735</generatorID>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <pk>true</pk>
+         <usedAttributes>
+            <attributeRef>94B911F2-BD8F-DCC8-81D9-997ECEC477CF</attributeRef>
+         </usedAttributes>
+      </identifier>
+   </identifiers>
+</Entity>

@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="14319EBB-14CB-5D4C-4B5B-AC174C2285B3" directorySegmentName="seg_0" name="CircleActivityType">
+   <createdBy>aking</createdBy>
+   <createdTime>2013-04-09 16:33:06 UTC</createdTime>
+   <changedBy>aking</changedBy>
+   <changedTime>2013-04-09 17:03:34 UTC</changedTime>
+   <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+   <pkName>CircleActivityTypePK</pkName>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Title</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Column</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Datatype</foType>
+         <colorRGB>-16744448</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>PK Element</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>FK Element</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>UK Element</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Not Null</foType>
+         <colorRGB>-65536</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Key</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+   </fonts>
+   <columns>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="ActivityTypeId" id="63B9DC30-F1B5-2D5F-AFF5-C263373897CE">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 16:34:30 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:34:48 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <delegate>7CA435C2-C8F7-3147-1B4E-66A0B6C0C257</delegate>
+         <previousColumn>false</previousColumn>
+         <associations>
+            <colAssociation fkAssociation="545F2E78-744F-4ECA-CD59-3658AE6E185C" referredColumn="7CA435C2-C8F7-3147-1B4E-66A0B6C0C257"/>
+         </associations>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="CircleActivityTypeId" id="AF0F5558-20D9-30BD-5D13-1150700249DF">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 16:33:33 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:33:33 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="CircleId" id="618736ED-3AB8-BC9F-1B18-F240D6BB8C6C">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 16:34:26 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:34:48 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <delegate>6B1E43C0-2C52-CC42-0EC0-72DC4B79BCED</delegate>
+         <previousColumn>false</previousColumn>
+         <associations>
+            <colAssociation fkAssociation="C04CEAFF-18A4-88CE-E9CF-5F836223D822" referredColumn="6B1E43C0-2C52-CC42-0EC0-72DC4B79BCED"/>
+         </associations>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="SkillLevelIds" id="D53B9405-D493-325A-B5FF-951E24F34486">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 17:03:34 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 17:03:34 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>50</dataTypeSize>
+      </Column>
+   </columns>
+   <indexes>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="7B402227-9703-F895-751D-56700426E92F" name="CircleActivityTypePK">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 16:33:33 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:33:33 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <pk>true</pk>
+         <indexState>Primary Constraint</indexState>
+         <indexColumnUsage>
+            <colUsage columnID="AF0F5558-20D9-30BD-5D13-1150700249DF"/>
+         </indexColumnUsage>
+      </ind_PK_UK>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="1D23B6BE-F827-14CC-5058-2C4D35B974B9" name="CircleActivityTypeAK1">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 16:35:29 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:35:29 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <indexState>Unique Plain Index</indexState>
+         <indexColumnUsage>
+            <colUsage columnID="618736ED-3AB8-BC9F-1B18-F240D6BB8C6C"/>
+            <colUsage columnID="63B9DC30-F1B5-2D5F-AFF5-C263373897CE"/>
+         </indexColumnUsage>
+      </ind_PK_UK>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="CBBE4531-421A-CF4D-C37B-D94940C87562" name="CircleActivityType_Circle_FK">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 16:34:26 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:34:26 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <indexColumnUsage>
+            <colUsage columnID="618736ED-3AB8-BC9F-1B18-F240D6BB8C6C"/>
+         </indexColumnUsage>
+      </ind_PK_UK>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="D0E03291-59F8-0AEB-2728-C92A577ADA44" name="CircleActivityType_ActivityType_FK">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 16:34:30 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:34:30 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <indexColumnUsage>
+            <colUsage columnID="63B9DC30-F1B5-2D5F-AFF5-C263373897CE"/>
+         </indexColumnUsage>
+      </ind_PK_UK>
+   </indexes>
+</Table>

@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="1CF6568C-683F-DAC8-E357-C8EBE0C70FB1" directorySegmentName="seg_0" name="Circle">
+   <createdBy>aking</createdBy>
+   <createdTime>2013-04-09 16:13:27 UTC</createdTime>
+   <changedBy>aking</changedBy>
+   <changedTime>2013-04-09 17:02:45 UTC</changedTime>
+   <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+   <pkName>CirclePK</pkName>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Title</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Column</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Datatype</foType>
+         <colorRGB>-16744448</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>PK Element</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>FK Element</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>UK Element</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Not Null</foType>
+         <colorRGB>-65536</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Key</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+   </fonts>
+   <columns>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="CircleDesc" id="DE11189B-54F0-30DB-BC86-64F68DA6960D">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 17:02:32 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 17:02:32 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>200</dataTypeSize>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="CircleId" id="6B1E43C0-2C52-CC42-0EC0-72DC4B79BCED">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 16:14:22 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:14:22 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="CircleName" id="639B96F0-20D6-38AD-1D29-5FE60E011854">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 16:19:02 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:19:02 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>30</dataTypeSize>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="UserId" id="51006C61-2633-1C90-801B-44855EC32C9E">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 16:18:01 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:18:14 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <delegate>5DD6445E-5B87-0C07-8EC5-6E0FE12820AE</delegate>
+         <previousColumn>false</previousColumn>
+         <associations>
+            <colAssociation fkAssociation="B1440BF8-56DE-06A8-8832-AB81178C8494" referredColumn="5DD6445E-5B87-0C07-8EC5-6E0FE12820AE"/>
+         </associations>
+      </Column>
+   </columns>
+   <indexes>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="EE0A6AF9-3B25-75D0-5B91-A674FD810C83" name="CirclePK">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 16:14:22 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:14:22 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <pk>true</pk>
+         <indexState>Primary Constraint</indexState>
+         <indexColumnUsage>
+            <colUsage columnID="6B1E43C0-2C52-CC42-0EC0-72DC4B79BCED"/>
+         </indexColumnUsage>
+      </ind_PK_UK>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="81F7DA93-DE75-66C9-B336-B203E083F81B" name="CircleAK1">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 16:20:13 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:20:13 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <indexState>Unique Plain Index</indexState>
+         <indexColumnUsage>
+            <colUsage columnID="51006C61-2633-1C90-801B-44855EC32C9E"/>
+            <colUsage columnID="639B96F0-20D6-38AD-1D29-5FE60E011854"/>
+         </indexColumnUsage>
+      </ind_PK_UK>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="96B70C7B-34B3-3489-EC0B-0F9F32514B60" name="Circle_User_FK">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 16:18:01 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:18:01 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <indexColumnUsage>
+            <colUsage columnID="51006C61-2633-1C90-801B-44855EC32C9E"/>
+         </indexColumnUsage>
+      </ind_PK_UK>
+   </indexes>
+</Table>
