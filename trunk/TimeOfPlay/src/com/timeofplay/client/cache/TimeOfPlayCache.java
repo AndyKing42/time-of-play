@@ -15,6 +15,8 @@ public void initialize(final IClientFactory clientFactory) {
 //--------------------------------------------------------------------------------------------------
 public final IUserProxy newUser(final IUserRequestContext userRequestContext) {
   final IUserProxy result = userRequestContext.create(IUserProxy.class);
+  {
+  } // the id should be set by from a call to the server
   final int id = Random.nextInt(10000);
   result.setId(id);
   result.setVersion(0);
