@@ -3,7 +3,7 @@
    <createdBy>aking</createdBy>
    <createdTime>2013-04-09 16:20:50 UTC</createdTime>
    <changedBy>aking</changedBy>
-   <changedTime>2013-04-09 16:33:55 UTC</changedTime>
+   <changedTime>2013-04-09 21:40:41 UTC</changedTime>
    <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
    <pkName>CircleUserPK</pkName>
    <fonts>
@@ -42,6 +42,15 @@
       </FontObject>
    </fonts>
    <columns>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="CircleUserId" id="45751CC6-5FBE-92C3-173D-00C2AA1E3A16">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 16:21:22 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:33:55 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Column>
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="CircleId" id="42207338-98E2-1A2C-FC4D-01D19FAC7BD7">
          <createdBy>aking</createdBy>
          <createdTime>2013-04-09 16:21:52 UTC</createdTime>
@@ -55,15 +64,6 @@
          <associations>
             <colAssociation fkAssociation="C86E7C14-B66B-E7F0-594A-286699C36ACE" referredColumn="6B1E43C0-2C52-CC42-0EC0-72DC4B79BCED"/>
          </associations>
-      </Column>
-      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="CircleUserId" id="45751CC6-5FBE-92C3-173D-00C2AA1E3A16">
-         <createdBy>aking</createdBy>
-         <createdTime>2013-04-09 16:21:22 UTC</createdTime>
-         <changedBy>aking</changedBy>
-         <changedTime>2013-04-09 16:33:55 UTC</changedTime>
-         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
-         <use>1</use>
-         <logicalDatatype>LOGDT011</logicalDatatype>
       </Column>
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="MemberUserId" id="AC529186-2880-8CD4-E89A-40AD60446263">
          <createdBy>aking</createdBy>

@@ -3,7 +3,7 @@
    <createdBy>aking</createdBy>
    <createdTime>2013-04-09 16:26:43 UTC</createdTime>
    <changedBy>aking</changedBy>
-   <changedTime>2013-04-09 16:34:03 UTC</changedTime>
+   <changedTime>2013-04-09 21:41:04 UTC</changedTime>
    <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
    <pkName>ActivityTypePK</pkName>
    <fonts>
@@ -42,6 +42,15 @@
       </FontObject>
    </fonts>
    <columns>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="ActivityTypeId" id="7CA435C2-C8F7-3147-1B4E-66A0B6C0C257">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 16:30:43 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:34:03 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Column>
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="ActivityTypeDesc" id="2A09603A-AA2F-6783-E298-D8298C3B1FB8">
          <createdBy>aking</createdBy>
          <createdTime>2013-04-09 16:32:05 UTC</createdTime>
@@ -51,15 +60,6 @@
          <use>1</use>
          <logicalDatatype>LOGDT024</logicalDatatype>
          <dataTypeSize>200</dataTypeSize>
-      </Column>
-      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="ActivityTypeId" id="7CA435C2-C8F7-3147-1B4E-66A0B6C0C257">
-         <createdBy>aking</createdBy>
-         <createdTime>2013-04-09 16:30:43 UTC</createdTime>
-         <changedBy>aking</changedBy>
-         <changedTime>2013-04-09 16:34:03 UTC</changedTime>
-         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
-         <use>1</use>
-         <logicalDatatype>LOGDT011</logicalDatatype>
       </Column>
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="ActivityTypeName" id="7224A0F0-C65B-E89C-91BD-CEB3B4D1C449">
          <createdBy>aking</createdBy>

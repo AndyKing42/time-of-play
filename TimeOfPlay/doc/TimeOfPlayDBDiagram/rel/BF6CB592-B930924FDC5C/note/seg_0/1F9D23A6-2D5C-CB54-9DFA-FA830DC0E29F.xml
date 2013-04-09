@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_1" id="1F9D23A6-2D5C-CB54-9DFA-FA830DC0E29F" directorySegmentName="seg_0">
+   <createdBy>aking</createdBy>
+   <createdTime>2013-04-09 20:09:40 UTC</createdTime>
+   <changedBy>aking</changedBy>
+   <changedTime>2013-04-09 20:12:30 UTC</changedTime>
+   <comment>A user can have any number of circles; each circle can have any number of activity types (or none); each circle activity type can zero or a few skill levels.</comment>
+   <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Title</foType>
+         <fontName>Verdana</fontName>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+   </fonts>
+</Note>
