@@ -2,7 +2,7 @@ package com.timeofplay.server.model.dto;
 
 import com.greatlogic.glbase.gldb.GLDBException;
 import com.greatlogic.glbase.gldb.GLSQL;
-import com.timeofplay.server.TimeOfPlayServerEnums.UserCol;
+import com.timeofplay.server.ITimeOfPlayServerEnums.UserCol;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;

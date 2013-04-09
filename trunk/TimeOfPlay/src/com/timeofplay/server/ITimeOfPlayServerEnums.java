@@ -6,9 +6,10 @@ import com.greatlogic.glbase.gldb.IGLColumn;
 import com.greatlogic.glbase.gldb.IGLTable;
 import com.greatlogic.glbase.glxml.IGLXMLAttributeEnum;
 
-public class TimeOfPlayServerEnums {
+public interface ITimeOfPlayServerEnums {
 //--------------------------------------------------------------------------------------------------
 public enum ETimeOfPlayConfigAttribute implements IGLXMLAttributeEnum {
+// configuration attributes
 } // enum ETimeOfPlayConfigAttribute
 //--------------------------------------------------------------------------------------------------
 public enum ETimeOfPlaySequence {
