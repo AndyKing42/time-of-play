@@ -10,16 +10,16 @@ import com.google.web.bindery.requestfactory.gwt.client.DefaultRequestTransport;
  * be used to ensure that when a response is received any global conditions (e.g., the user is no
  * longer logged in) can be handled in a consistent manner.
  */
-public class TOPRequestTransport extends DefaultRequestTransport {
+public class TimeOfPlayRequestTransport extends DefaultRequestTransport {
 //--------------------------------------------------------------------------------------------------
 private IClientFactory         _clientFactory;
 private RequestFactoryResender _requestFactoryResender;
 //==================================================================================================
-private final class RFERequestCallback implements RequestCallback {
+private final class TimeOfPlayRequestCallback implements RequestCallback {
 private RequestCallback _requestCallback;
-private RFERequestCallback(final RequestCallback requestCallback) {
+private TimeOfPlayRequestCallback(final RequestCallback requestCallback) {
   _requestCallback = requestCallback;
-} // RFERequestCallback()
+} // TimeOfPlayRequestCallback()
 @Override
 public void onError(final Request request, final Throwable exception) {
   _requestCallback.onError(request, exception);
@@ -33,7 +33,7 @@ public void onResponseReceived(final Request request, final Response response) {
     _requestCallback.onResponseReceived(request, response);
   }
 } // onResponseReceived()
-} // class RFERequestCallback
+} // class TimeOfPlayRequestCallback
 //==================================================================================================
 @Override
 protected void configureRequestBuilder(final RequestBuilder builder) {
@@ -42,7 +42,7 @@ protected void configureRequestBuilder(final RequestBuilder builder) {
 //--------------------------------------------------------------------------------------------------
 @Override
 protected RequestCallback createRequestCallback(final TransportReceiver receiver) {
-  return new RFERequestCallback(super.createRequestCallback(receiver));
+  return new TimeOfPlayRequestCallback(super.createRequestCallback(receiver));
 } // createRequestCallback()
 //--------------------------------------------------------------------------------------------------
 void initialize(final IClientFactory clientFactory) {

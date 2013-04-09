@@ -3,5 +3,17 @@
   xmlns:ui='urn:ui:com.google.gwt.uibinder'
   xmlns:g='urn:import:com.google.gwt.user.client.ui'>
   <g:ResizeLayoutPanel ui:field='topLevelPanel'>
+    <g:TabLayoutPanel
+      barUnit='EM'
+      barHeight='3'>
+      <g:tab>
+        <g:header>My Account</g:header>
+        <g:ResizeLayoutPanel/>
+      </g:tab>
+      <g:tab>
+        <g:header>My Events</g:header>
+        <g:ResizeLayoutPanel/>
+      </g:tab>
+    </g:TabLayoutPanel>
   </g:ResizeLayoutPanel>
 </ui:UiBinder>
