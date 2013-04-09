@@ -18,7 +18,7 @@ public void onModuleLoad() {
   final SimpleEventBus eventBus = new SimpleEventBus();
   final IRemoteServiceAsync remoteServiceAsync = (IRemoteServiceAsync)GWT.create(IRemoteService.class);
   final IRequestFactory requestFactory = GWT.create(IRequestFactory.class);
-  requestFactory.initialize(eventBus, new TOPRequestTransport());
+  requestFactory.initialize(eventBus, new TimeOfPlayRequestTransport());
   final TimeOfPlayCache timeOfPlayCache = new TimeOfPlayCache();
   final IClientFactory clientFactory = GWT.create(UIClientFactory.class);
   clientFactory.initialize(eventBus, remoteServiceAsync, requestFactory, timeOfPlayCache);

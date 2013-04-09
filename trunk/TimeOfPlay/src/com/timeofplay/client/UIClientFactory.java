@@ -56,7 +56,7 @@ public void initialize(final EventBus eventBus, final IRemoteServiceAsync remote
   _eventBus = eventBus;
   _remoteServiceAsync = remoteServiceAsync;
   _requestFactory = requestFactory;
-  ((TOPRequestTransport)_requestFactory.getRequestTransport()).initialize(this);
+  ((TimeOfPlayRequestTransport)_requestFactory.getRequestTransport()).initialize(this);
   _timeOfPlayCache = timeOfPlayCache;
 } // initialize()
 //--------------------------------------------------------------------------------------------------
