@@ -3,7 +3,7 @@
    <createdBy>aking</createdBy>
    <createdTime>2013-04-09 16:33:06 UTC</createdTime>
    <changedBy>aking</changedBy>
-   <changedTime>2013-04-09 17:03:34 UTC</changedTime>
+   <changedTime>2013-04-09 21:40:51 UTC</changedTime>
    <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
    <pkName>CircleActivityTypePK</pkName>
    <fonts>
@@ -42,6 +42,15 @@
       </FontObject>
    </fonts>
    <columns>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="CircleActivityTypeId" id="AF0F5558-20D9-30BD-5D13-1150700249DF">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 16:33:33 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:33:33 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Column>
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="ActivityTypeId" id="63B9DC30-F1B5-2D5F-AFF5-C263373897CE">
          <createdBy>aking</createdBy>
          <createdTime>2013-04-09 16:34:30 UTC</createdTime>
@@ -55,15 +64,6 @@
          <associations>
             <colAssociation fkAssociation="545F2E78-744F-4ECA-CD59-3658AE6E185C" referredColumn="7CA435C2-C8F7-3147-1B4E-66A0B6C0C257"/>
          </associations>
-      </Column>
-      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="CircleActivityTypeId" id="AF0F5558-20D9-30BD-5D13-1150700249DF">
-         <createdBy>aking</createdBy>
-         <createdTime>2013-04-09 16:33:33 UTC</createdTime>
-         <changedBy>aking</changedBy>
-         <changedTime>2013-04-09 16:33:33 UTC</changedTime>
-         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
-         <use>1</use>
-         <logicalDatatype>LOGDT011</logicalDatatype>
       </Column>
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="CircleId" id="618736ED-3AB8-BC9F-1B18-F240D6BB8C6C">
          <createdBy>aking</createdBy>
@@ -88,7 +88,7 @@
          <nullsAllowed>true</nullsAllowed>
          <use>1</use>
          <logicalDatatype>LOGDT024</logicalDatatype>
-         <dataTypeSize>50</dataTypeSize>
+         <dataTypeSize>200</dataTypeSize>
       </Column>
    </columns>
    <indexes>

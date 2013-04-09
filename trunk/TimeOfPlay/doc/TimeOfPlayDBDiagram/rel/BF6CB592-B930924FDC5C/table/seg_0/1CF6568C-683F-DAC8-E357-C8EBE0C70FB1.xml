@@ -3,7 +3,7 @@
    <createdBy>aking</createdBy>
    <createdTime>2013-04-09 16:13:27 UTC</createdTime>
    <changedBy>aking</changedBy>
-   <changedTime>2013-04-09 17:02:45 UTC</changedTime>
+   <changedTime>2013-04-09 21:40:32 UTC</changedTime>
    <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
    <pkName>CirclePK</pkName>
    <fonts>
@@ -42,6 +42,15 @@
       </FontObject>
    </fonts>
    <columns>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="CircleId" id="6B1E43C0-2C52-CC42-0EC0-72DC4B79BCED">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 16:14:22 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:14:22 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Column>
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="CircleDesc" id="DE11189B-54F0-30DB-BC86-64F68DA6960D">
          <createdBy>aking</createdBy>
          <createdTime>2013-04-09 17:02:32 UTC</createdTime>
@@ -52,15 +61,6 @@
          <use>1</use>
          <logicalDatatype>LOGDT024</logicalDatatype>
          <dataTypeSize>200</dataTypeSize>
-      </Column>
-      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="CircleId" id="6B1E43C0-2C52-CC42-0EC0-72DC4B79BCED">
-         <createdBy>aking</createdBy>
-         <createdTime>2013-04-09 16:14:22 UTC</createdTime>
-         <changedBy>aking</changedBy>
-         <changedTime>2013-04-09 16:14:22 UTC</changedTime>
-         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
-         <use>1</use>
-         <logicalDatatype>LOGDT011</logicalDatatype>
       </Column>
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="CircleName" id="639B96F0-20D6-38AD-1D29-5FE60E011854">
          <createdBy>aking</createdBy>

@@ -3,16 +3,22 @@
    <object objectType="Table" objectID="0B82BF0B-FD94-087A-5C60-34DC4A69EBA5" name="ActivityType" seqName="seg_0"/>
    <object objectType="Table" objectID="1CF6568C-683F-DAC8-E357-C8EBE0C70FB1" name="Circle" seqName="seg_0"/>
    <object objectType="Table" objectID="14319EBB-14CB-5D4C-4B5B-AC174C2285B3" name="CircleActivityType" seqName="seg_0"/>
+   <object objectType="Table" objectID="B2B42261-F110-DD85-3303-DB38D2E58B66" name="CircleHierarchy" seqName="seg_0"/>
    <object objectType="Table" objectID="88A98EEC-AC15-294B-7610-68D01E717941" name="CircleUser" seqName="seg_0"/>
    <object objectType="Table" objectID="C92BA27E-A69F-7B45-C0EE-03E5A69D779A" name="SkillLevel" seqName="seg_0"/>
    <object objectType="Table" objectID="0B908C1A-025A-2777-98F1-FA3D9B677D0A" name="User" seqName="seg_0"/>
    <object objectType="Table" objectID="74CF4A99-226F-F640-5412-3244F7F50E9C" name="UserActivityType" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="545F2E78-744F-4ECA-CD59-3658AE6E185C" name="CircleActivityType_ActivityType_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="C04CEAFF-18A4-88CE-E9CF-5F836223D822" name="CircleActivityType_Circle_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="241EBC25-4BCE-AC1A-521C-07C20B21EDB8" name="CircleHierarchy_Circle_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="258BE900-4662-DACB-50BF-9C545E4CA0CC" name="CircleHierarchy_Circle_FKv1" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="C86E7C14-B66B-E7F0-594A-286699C36ACE" name="CircleUser_Circle_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="8E850F93-929B-F40A-AA2B-337C396EAF7B" name="CircleUser_User_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="B1440BF8-56DE-06A8-8832-AB81178C8494" name="Circle_User_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="3E8B168C-C783-600F-AA00-194677C46692" name="SkillLevel_ActivityType_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="CE4DE851-8C52-4667-9E3E-7E40DDBB909D" name="UserActivityType_ActivityType_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="68337A1E-71E7-170E-D185-2EFEDC4EE581" name="UserActivityType_User_FK" seqName="seg_0"/>
+   <object objectType="Note" objectID="1F9D23A6-2D5C-CB54-9DFA-FA830DC0E29F" name="Note_1" seqName="seg_0"/>
+   <object objectType="Note" objectID="7F712AAD-C467-C322-0910-3F6BE6C3D288" name="Note_2" seqName="seg_0"/>
+   <object objectType="Note" objectID="847F8367-D5FD-C4A3-8A90-1F1427DF4BE6" name="Note_3" seqName="seg_0"/>
 </oracle.dbtools.crest.model.design.relational.RelationalDesign>

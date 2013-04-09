@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_2" id="7F712AAD-C467-C322-0910-3F6BE6C3D288" directorySegmentName="seg_0">
+   <createdBy>aking</createdBy>
+   <createdTime>2013-04-09 20:14:55 UTC</createdTime>
+   <changedBy>aking</changedBy>
+   <changedTime>2013-04-09 20:16:50 UTC</changedTime>
+   <comment>Skill levels are associated with an activity type. When an activity type is associated with a user (through the UserActivityType table) or a circle (through the CircleActivityType table) the skill levels that can be associated with that entity can be selected from the skill levels that are associated with the activity type.</comment>
+   <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Title</foType>
+         <fontName>Verdana</fontName>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+   </fonts>
+</Note>

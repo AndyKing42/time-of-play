@@ -1,11 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" id="74CF4A99-226F-F640-5412-3244F7F50E9C" directorySegmentName="seg_0" name="UserActivityType">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="B2B42261-F110-DD85-3303-DB38D2E58B66" directorySegmentName="seg_0" name="CircleHierarchy">
    <createdBy>aking</createdBy>
-   <createdTime>2013-04-09 16:50:11 UTC</createdTime>
+   <createdTime>2013-04-09 21:33:55 UTC</createdTime>
    <changedBy>aking</changedBy>
-   <changedTime>2013-04-09 21:40:58 UTC</changedTime>
+   <changedTime>2013-04-09 21:40:26 UTC</changedTime>
    <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
-   <pkName>UserActivityTypePK</pkName>
+   <pkName>CircleHierarchyPK</pkName>
    <fonts>
       <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
          <foType>Title</foType>
@@ -42,98 +42,96 @@
       </FontObject>
    </fonts>
    <columns>
-      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="UserActivityTypeId" id="2E640C61-BC20-9D56-FDFC-164E5305B370">
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="CircleHierarchyId" id="22AB53D0-CE92-DC96-0DDA-35E615CD1383">
          <createdBy>aking</createdBy>
-         <createdTime>2013-04-09 16:50:47 UTC</createdTime>
+         <createdTime>2013-04-09 21:36:58 UTC</createdTime>
          <changedBy>aking</changedBy>
-         <changedTime>2013-04-09 16:50:47 UTC</changedTime>
+         <changedTime>2013-04-09 21:36:58 UTC</changedTime>
          <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
          <use>1</use>
          <logicalDatatype>LOGDT011</logicalDatatype>
       </Column>
-      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="ActivityTypeId" id="48BFE018-1C75-D503-7A7C-BFB8191363D2">
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="ChildCircleId" id="BB45E976-96E4-B7A0-4976-64DB71A91287">
          <createdBy>aking</createdBy>
-         <createdTime>2013-04-09 16:51:48 UTC</createdTime>
+         <createdTime>2013-04-09 21:35:11 UTC</createdTime>
          <changedBy>aking</changedBy>
-         <changedTime>2013-04-09 16:52:54 UTC</changedTime>
+         <changedTime>2013-04-09 21:35:43 UTC</changedTime>
          <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
          <use>1</use>
          <logicalDatatype>LOGDT011</logicalDatatype>
-         <delegate>7CA435C2-C8F7-3147-1B4E-66A0B6C0C257</delegate>
+         <delegate>6B1E43C0-2C52-CC42-0EC0-72DC4B79BCED</delegate>
          <previousColumn>false</previousColumn>
          <associations>
-            <colAssociation fkAssociation="CE4DE851-8C52-4667-9E3E-7E40DDBB909D" referredColumn="7CA435C2-C8F7-3147-1B4E-66A0B6C0C257"/>
+            <colAssociation fkAssociation="258BE900-4662-DACB-50BF-9C545E4CA0CC" referredColumn="6B1E43C0-2C52-CC42-0EC0-72DC4B79BCED"/>
          </associations>
       </Column>
-      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="SkillLevelIds" id="9EBDA6AC-B3AE-25B6-6203-C92331B008E3">
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="ChildSeq" id="878A594B-207B-6A2B-2C09-2ABC484F804B">
          <createdBy>aking</createdBy>
-         <createdTime>2013-04-09 17:05:27 UTC</createdTime>
+         <createdTime>2013-04-09 21:37:49 UTC</createdTime>
          <changedBy>aking</changedBy>
-         <changedTime>2013-04-09 17:05:27 UTC</changedTime>
-         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
-         <nullsAllowed>true</nullsAllowed>
-         <use>1</use>
-         <logicalDatatype>LOGDT024</logicalDatatype>
-         <dataTypeSize>200</dataTypeSize>
-      </Column>
-      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="UserId" id="395DC34A-6C62-66F0-F075-B31D1175AFC7">
-         <createdBy>aking</createdBy>
-         <createdTime>2013-04-09 16:51:41 UTC</createdTime>
-         <changedBy>aking</changedBy>
-         <changedTime>2013-04-09 16:52:54 UTC</changedTime>
+         <changedTime>2013-04-09 21:37:49 UTC</changedTime>
          <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
          <use>1</use>
          <logicalDatatype>LOGDT011</logicalDatatype>
-         <delegate>5DD6445E-5B87-0C07-8EC5-6E0FE12820AE</delegate>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="ParentCircleId" id="2B9389D6-E6F4-732A-E66F-C9F1F15C0D94">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-09 21:34:57 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 21:35:43 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <delegate>6B1E43C0-2C52-CC42-0EC0-72DC4B79BCED</delegate>
          <previousColumn>false</previousColumn>
          <associations>
-            <colAssociation fkAssociation="68337A1E-71E7-170E-D185-2EFEDC4EE581" referredColumn="5DD6445E-5B87-0C07-8EC5-6E0FE12820AE"/>
+            <colAssociation fkAssociation="241EBC25-4BCE-AC1A-521C-07C20B21EDB8" referredColumn="6B1E43C0-2C52-CC42-0EC0-72DC4B79BCED"/>
          </associations>
       </Column>
    </columns>
    <indexes>
-      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="864F59FF-F231-24BF-2AC7-927BC4410A0C" name="UserActivityTypePK">
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="54759047-82BF-FAD8-CE86-BEBAE856EABC" name="CircleHierarchyPK">
          <createdBy>aking</createdBy>
-         <createdTime>2013-04-09 16:50:47 UTC</createdTime>
+         <createdTime>2013-04-09 21:36:58 UTC</createdTime>
          <changedBy>aking</changedBy>
-         <changedTime>2013-04-09 16:50:47 UTC</changedTime>
+         <changedTime>2013-04-09 21:36:58 UTC</changedTime>
          <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
          <pk>true</pk>
          <indexState>Primary Constraint</indexState>
          <indexColumnUsage>
-            <colUsage columnID="2E640C61-BC20-9D56-FDFC-164E5305B370"/>
+            <colUsage columnID="22AB53D0-CE92-DC96-0DDA-35E615CD1383"/>
          </indexColumnUsage>
       </ind_PK_UK>
-      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="C7183AEA-AD9F-BC6B-6B1D-4F3D7CCF336A" name="UserActivityTypeAK1">
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="CEF0353A-81CC-3207-0AED-209227D646F7" name="CircleHierarchyAK1">
          <createdBy>aking</createdBy>
-         <createdTime>2013-04-09 16:53:16 UTC</createdTime>
+         <createdTime>2013-04-09 21:39:09 UTC</createdTime>
          <changedBy>aking</changedBy>
-         <changedTime>2013-04-09 16:53:16 UTC</changedTime>
+         <changedTime>2013-04-09 21:39:09 UTC</changedTime>
          <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
          <indexState>Unique Plain Index</indexState>
          <indexColumnUsage>
-            <colUsage columnID="395DC34A-6C62-66F0-F075-B31D1175AFC7"/>
-            <colUsage columnID="48BFE018-1C75-D503-7A7C-BFB8191363D2"/>
+            <colUsage columnID="2B9389D6-E6F4-732A-E66F-C9F1F15C0D94"/>
+            <colUsage columnID="878A594B-207B-6A2B-2C09-2ABC484F804B"/>
          </indexColumnUsage>
       </ind_PK_UK>
-      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="A0831F1A-A7DA-7547-64CA-C40B7C1A9E1B" name="UserActivityType_User_FK">
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="FB725280-5C35-C5EA-43D3-B870EFFA8FD8" name="CircleHierarchy_Circle_FK">
          <createdBy>aking</createdBy>
-         <createdTime>2013-04-09 16:51:41 UTC</createdTime>
+         <createdTime>2013-04-09 21:34:57 UTC</createdTime>
          <changedBy>aking</changedBy>
-         <changedTime>2013-04-09 16:51:41 UTC</changedTime>
+         <changedTime>2013-04-09 21:34:57 UTC</changedTime>
          <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
          <indexColumnUsage>
-            <colUsage columnID="395DC34A-6C62-66F0-F075-B31D1175AFC7"/>
+            <colUsage columnID="2B9389D6-E6F4-732A-E66F-C9F1F15C0D94"/>
          </indexColumnUsage>
       </ind_PK_UK>
-      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="235CE457-AF84-8E27-0F37-C1CEB395B7CA" name="UserActivityType_ActivityType_FK">
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="2062AF69-F5B6-E493-1EBE-AC2E56AF91E4" name="CircleHierarchy_Circle_FKv1">
          <createdBy>aking</createdBy>
-         <createdTime>2013-04-09 16:51:48 UTC</createdTime>
+         <createdTime>2013-04-09 21:35:11 UTC</createdTime>
          <changedBy>aking</changedBy>
-         <changedTime>2013-04-09 16:51:48 UTC</changedTime>
+         <changedTime>2013-04-09 21:35:11 UTC</changedTime>
          <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
          <indexColumnUsage>
-            <colUsage columnID="48BFE018-1C75-D503-7A7C-BFB8191363D2"/>
+            <colUsage columnID="BB45E976-96E4-B7A0-4976-64DB71A91287"/>
          </indexColumnUsage>
       </ind_PK_UK>
    </indexes>

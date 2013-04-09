@@ -3,7 +3,7 @@
    <createdBy>aking</createdBy>
    <createdTime>2011-09-26 21:01:39 UTC</createdTime>
    <changedBy>aking</changedBy>
-   <changedTime>2013-04-09 17:08:34 UTC</changedTime>
+   <changedTime>2013-04-09 21:40:18 UTC</changedTime>
    <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
    <pkName>DomainUser_PK</pkName>
    <fonts>
@@ -42,6 +42,15 @@
       </FontObject>
    </fonts>
    <columns>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="UserId" id="5DD6445E-5B87-0C07-8EC5-6E0FE12820AE">
+         <createdBy>aking</createdBy>
+         <createdTime>2011-09-26 21:02:02 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-09 16:14:59 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Column>
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="PasswordHash" id="E50595B7-779C-C681-1FA3-8CE078D2D9CC">
          <createdBy>aking</createdBy>
          <createdTime>2013-04-09 15:52:08 UTC</createdTime>
@@ -70,15 +79,6 @@
          <use>1</use>
          <logicalDatatype>LOGDT024</logicalDatatype>
          <dataTypeSize>50</dataTypeSize>
-      </Column>
-      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="UserId" id="5DD6445E-5B87-0C07-8EC5-6E0FE12820AE">
-         <createdBy>aking</createdBy>
-         <createdTime>2011-09-26 21:02:02 UTC</createdTime>
-         <changedBy>aking</changedBy>
-         <changedTime>2013-04-09 16:14:59 UTC</changedTime>
-         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
-         <use>1</use>
-         <logicalDatatype>LOGDT011</logicalDatatype>
       </Column>
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="UserLoginId" id="00A7613A-B078-57CF-2B55-772CF2D6AF0F">
          <createdBy>aking</createdBy>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_3" id="847F8367-D5FD-C4A3-8A90-1F1427DF4BE6" directorySegmentName="seg_0">
+   <createdBy>aking</createdBy>
+   <createdTime>2013-04-09 20:18:00 UTC</createdTime>
+   <changedBy>aking</changedBy>
+   <changedTime>2013-04-09 20:19:29 UTC</changedTime>
+   <comment>Each user will have a circle that is called &amp;quot;All&amp;quot;. When a new user is added to any of a user&amp;apos;s circles they will always be added to the &amp;quot;All&amp;quot; circle.</comment>
+   <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Title</foType>
+         <fontName>Verdana</fontName>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+   </fonts>
+</Note>
