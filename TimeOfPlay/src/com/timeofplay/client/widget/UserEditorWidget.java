@@ -16,7 +16,9 @@ import com.timeofplay.shared.IUserRequestContext;
 public class UserEditorWidget extends Composite implements Editor<IUserProxy> {
 //--------------------------------------------------------------------------------------------------
 @UiField
-TextBox                         userIdTextBox;
+TextBox                         screenName;
+@UiField
+TextBox                         userId;
 
 private final IClientFactory    _clientFactory;
 private IUserProxy              _originalUser;
@@ -48,7 +50,7 @@ public void editUser(final IUserProxy user) {
   if (_updateType == EUpdateType.Insert) {
     _user = _clientFactory.getTimeOfPlayCache().newUser(_userRequestContext);
     _userEditorDriver.edit(_user, _userRequestContext);
-    userIdTextBox.setFocus(true);
+    userId.setFocus(true);
   }
   else {
     _user = _userRequestContext.edit(user);
