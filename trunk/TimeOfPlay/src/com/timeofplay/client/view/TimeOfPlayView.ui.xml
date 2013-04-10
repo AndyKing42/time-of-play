@@ -2,6 +2,7 @@
 <ui:UiBinder
   xmlns:ui='urn:ui:com.google.gwt.uibinder'
   xmlns:g='urn:import:com.google.gwt.user.client.ui'
+  xmlns:c='urn:import:com.google.gwt.user.cellview.client'
   xmlns:top='urn:import:com.timeofplay.client.widget'>
   <g:ResizeLayoutPanel ui:field='topLevelPanel'>
     <g:TabLayoutPanel
@@ -13,13 +14,26 @@
           <top:UserEditorWidget ui:field='userEditorWidget'/>
           <g:SplitLayoutPanel>
             <g:west size='100'>
-              <g:ResizeLayoutPanel/>
+              <g:HeaderPanel>
+                <g:Label>People that I know</g:Label>
+                <c:DataGrid ui:field='allCircleUserDataGrid'/>
+              </g:HeaderPanel>
             </g:west>
             <g:center>
-              <g:ResizeLayoutPanel/>
+              <g:HeaderPanel>
+                <g:HorizontalPanel>
+                  <g:Label>Activities that I like</g:Label>
+                  <g:Button>Add Activity</g:Button>
+                </g:HorizontalPanel>
+                <g:ListBox></g:ListBox>
+              </g:HeaderPanel>
             </g:center>
           </g:SplitLayoutPanel>
         </g:HeaderPanel>
+      </g:tab>
+      <g:tab>
+        <g:header>My Circles</g:header>
+        <g:ResizeLayoutPanel/>
       </g:tab>
       <g:tab>
         <g:header>My Events</g:header>
