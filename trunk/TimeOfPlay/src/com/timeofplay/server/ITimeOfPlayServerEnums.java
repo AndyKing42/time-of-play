@@ -13,22 +13,27 @@ public enum ETimeOfPlayConfigAttribute implements IGLXMLAttributeEnum {
 } // enum ETimeOfPlayConfigAttribute
 //--------------------------------------------------------------------------------------------------
 public enum ETimeOfPlaySequence {
-UserId(1);
-private final int _id;
-private ETimeOfPlaySequence(final int id) {
-  _id = id;
+CircleId(1),
+CircleUserId(2),
+UserId(3);
+private final int _dbSequenceId;
+private ETimeOfPlaySequence(final int dbSequenceId) {
+  _dbSequenceId = dbSequenceId;
 } // enum ETimeOfPlaySequence
-public int getId() {
-  return _id;
-} // getId()
+public int getDBSequenceId() {
+  return _dbSequenceId;
+} // getDBSequenceId()
 public int getNextValue(final int numberOfValues) throws GLDBException {
   return (int)GLDBUtil.getNextSequenceValue(name(), ETimeOfPlayTable.DBSequence,
-                                            DBSequenceCol.NextValue, DBSequenceCol.Id + "=" + _id,
+                                            DBSequenceCol.NextValue, DBSequenceCol.DBSequenceId +
+                                                                     "=" + _dbSequenceId,
                                             numberOfValues);
 } // getNextValue()
 } // enum ETimeOfPlaySequence
 //--------------------------------------------------------------------------------------------------
 public enum ETimeOfPlayTable implements IGLTable {
+Circle(CircleCol.class),
+CircleUser(CircleUserCol.class),
 DBSequence(DBSequenceCol.class),
 User(UserCol.class);
 private final Class<? extends Enum<?>> _columnEnumClass;
@@ -50,15 +55,32 @@ public String getDataSourceName() {
 } // getDataSourceName()
 } // enum ETimeOfPlayTable
 //--------------------------------------------------------------------------------------------------
+public enum CircleCol implements IGLColumn {
+CircleDesc,
+CircleId,
+CircleName,
+UserId,
+Version
+} // enum CircleCol
+//--------------------------------------------------------------------------------------------------
+public enum CircleUserCol implements IGLColumn {
+CircleId,
+CircleUserId,
+MemberUserId,
+Version
+} // enum CircleUserCol
+//--------------------------------------------------------------------------------------------------
 public enum DBSequenceCol implements IGLColumn {
-Id,
+DBSequenceId,
 NextValue
 } // enum DBSequenceCol
 //--------------------------------------------------------------------------------------------------
 public enum UserCol implements IGLColumn {
-Id,
 PasswordHash,
+RegistrationDate,
+ScreenName,
 UserId,
+UserLoginId,
 Version
 } // enum UserCol
 //--------------------------------------------------------------------------------------------------

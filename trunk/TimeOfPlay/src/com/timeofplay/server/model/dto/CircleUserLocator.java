@@ -3,7 +3,7 @@ package com.timeofplay.server.model.dto;
 import com.google.web.bindery.requestfactory.shared.Locator;
 import com.timeofplay.server.model.dao.UserDAOLocator;
 
-public class UserLocator extends Locator<User, Integer> {
+public class CircleUserLocator extends Locator<User, Integer> {
 //--------------------------------------------------------------------------------------------------
 @Override
 public User create(final Class<? extends User> clazz) {
@@ -23,7 +23,7 @@ public Class<User> getDomainType() {
 @Override
 public Integer getId(final User user) {
   return user.getUserId();
-} // getId
+} // getId()
 //--------------------------------------------------------------------------------------------------
 @Override
 public Class<Integer> getIdType() {

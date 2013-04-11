@@ -11,7 +11,7 @@ import java.util.List;
 @Service(value = IUserDAO.class, locator = UserDAOLocator.class)
 public interface IUserRequestContext extends RequestContext {
 //--------------------------------------------------------------------------------------------------
-Request<IUserProxy> findById(final Integer id);
+Request<IUserProxy> findById(final Integer userId);
 Request<IUserProxy> findByUserIdAndPassword(final String userId, final String password);
 Request<Integer> save(final IUserProxy user);
 Request<List<IUserProxy>> selectAllUsers();

@@ -18,7 +18,7 @@ public final IUserProxy newUser(final IUserRequestContext userRequestContext) {
   {
   } // the id should be set by from a call to the server
   final int id = Random.nextInt(10000);
-  result.setId(id);
+  result.setUserId(id);
   result.setVersion(0);
   return result;
 } // newUser()

@@ -25,12 +25,12 @@ static UserDAO getInstance() {
 } // getInstance()
 //--------------------------------------------------------------------------------------------------
 @Override
-public User findById(final Integer id) {
+public User findById(final Integer userId) {
   User result = null;
   try {
     final GLSQL userSQL = GLSQL.select();
     userSQL.from(ETimeOfPlayTable.User);
-    userSQL.whereAnd(UserCol.Id, EGLDBOp.Equals, id);
+    userSQL.whereAnd(UserCol.UserId, EGLDBOp.Equals, userId);
     userSQL.open();
     try {
       if (userSQL.next()) {
@@ -42,7 +42,7 @@ public User findById(final Integer id) {
     }
   }
   catch (final GLDBException dbe) {
-    GLLog.major("Error attempting to get user id:" + id, dbe);
+    GLLog.major("Error attempting to get user id:" + userId, dbe);
   }
   return result;
 } // findById()
@@ -84,19 +84,19 @@ public User findByUserIdAndPassword(final String userId, final String password) 
  */
 @Override
 public Integer save(final User user) {
-  int result = user.getId();
+  int result = user.getUserId();
   try {
     GLSQL userSQL;
-    if (user.getId() == 0) {
+    if (user.getUserId() == 0) {
       result = ETimeOfPlaySequence.UserId.getNextValue(1);
       userSQL = GLSQL.insert(ETimeOfPlayTable.User, false);
-      userSQL.setValue(UserCol.Id, result);
+      userSQL.setValue(UserCol.UserId, result);
       userSQL.setValue(UserCol.PasswordHash,
                        BCrypt.hashpw(user.getPasswordHash(), BCrypt.gensalt()));
     }
     else {
       userSQL = GLSQL.update(ETimeOfPlayTable.User);
-      userSQL.whereAnd(UserCol.Id, EGLDBOp.Equals, result);
+      userSQL.whereAnd(UserCol.UserId, EGLDBOp.Equals, result);
     }
     userSQL.setValue(UserCol.UserId, user.getUserId());
     userSQL.setValue(UserCol.Version, user.getVersion());

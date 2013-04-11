@@ -4,11 +4,11 @@
   <g:VerticalPanel>
     <g:HorizontalPanel>
       <g:Label>User Id</g:Label>
-      <g:TextBox ui:field='userId'/>
+      <g:TextBox ui:field='userLoginId'/>
       <g:Button ui:field='changePasswordButton'>Change Password</g:Button>
     </g:HorizontalPanel>
     <g:HorizontalPanel>
-      <g:Label>ScreenName</g:Label>
+      <g:Label>Screen Name</g:Label>
       <g:TextBox ui:field='screenName'/>
     </g:HorizontalPanel>
   </g:VerticalPanel>
