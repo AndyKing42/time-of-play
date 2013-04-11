@@ -3,7 +3,7 @@
    <createdBy>aking</createdBy>
    <createdTime>2013-04-09 16:20:50 UTC</createdTime>
    <changedBy>aking</changedBy>
-   <changedTime>2013-04-09 21:40:41 UTC</changedTime>
+   <changedTime>2013-04-11 18:48:23 UTC</changedTime>
    <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
    <pkName>CircleUserPK</pkName>
    <fonts>
@@ -78,6 +78,15 @@
          <associations>
             <colAssociation fkAssociation="8E850F93-929B-F40A-AA2B-337C396EAF7B" referredColumn="5DD6445E-5B87-0C07-8EC5-6E0FE12820AE"/>
          </associations>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="Version" id="E4E3443B-1B72-96A7-2383-403EFA772245">
+         <createdBy>aking</createdBy>
+         <createdTime>2013-04-11 18:48:23 UTC</createdTime>
+         <changedBy>aking</changedBy>
+         <changedTime>2013-04-11 18:48:23 UTC</changedTime>
+         <ownerDesignName>TimeOfPlayDBDiagram</ownerDesignName>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
       </Column>
    </columns>
    <indexes>

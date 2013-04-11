@@ -26,7 +26,7 @@ public Integer login(final String userId, final String password) {
     result = 0;
   }
   else {
-    result = user.getId();
+    result = user.getUserId();
     GLLog.infoSummary("Login succeeded for userId:" + userId);
     final HttpSession session = getThreadLocalRequest().getSession();
     session.setAttribute("User", user);

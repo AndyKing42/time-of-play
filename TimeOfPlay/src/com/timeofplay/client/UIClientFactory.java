@@ -3,12 +3,18 @@ package com.timeofplay.client;
 import com.google.web.bindery.event.shared.EventBus;
 import com.timeofplay.client.cache.TimeOfPlayCache;
 import com.timeofplay.client.view.TimeOfPlayView;
+import com.timeofplay.client.widget.AccountTabPanel;
+import com.timeofplay.client.widget.CirclesTabPanel;
+import com.timeofplay.client.widget.EventsTabPanel;
 import com.timeofplay.client.widget.LoginWidget;
 import com.timeofplay.shared.IRemoteServiceAsync;
 
 public class UIClientFactory implements IClientFactory {
 //--------------------------------------------------------------------------------------------------
+private AccountTabPanel        _accountTabPanel;
+private CirclesTabPanel        _circlesTabPanel;
 private EventBus               _eventBus;
+private EventsTabPanel         _eventsTabPanel;
 private LoginWidget            _loginWidget;
 private IRemoteServiceAsync    _remoteServiceAsync;
 private IRequestFactory        _requestFactory;
@@ -17,9 +23,33 @@ private TimeOfPlayCache        _timeOfPlayCache;
 private TimeOfPlayView         _timeOfPlayView;
 //--------------------------------------------------------------------------------------------------
 @Override
+public AccountTabPanel getAccountTabPanel() {
+  if (_accountTabPanel == null) {
+    _accountTabPanel = new AccountTabPanel(this);
+  }
+  return _accountTabPanel;
+} // getAccountTabPanel()
+//--------------------------------------------------------------------------------------------------
+@Override
+public CirclesTabPanel getCirclesTabPanel() {
+  if (_circlesTabPanel == null) {
+    _circlesTabPanel = new CirclesTabPanel(this);
+  }
+  return _circlesTabPanel;
+} // getCirclesTabPanel()
+//--------------------------------------------------------------------------------------------------
+@Override
 public EventBus getEventBus() {
   return _eventBus;
 } // getEventBus()
+//--------------------------------------------------------------------------------------------------
+@Override
+public EventsTabPanel getEventsTabPanel() {
+  if (_eventsTabPanel == null) {
+    _eventsTabPanel = new EventsTabPanel(this);
+  }
+  return _eventsTabPanel;
+} // getEventsTabPanel()
 //--------------------------------------------------------------------------------------------------
 @Override
 public IRemoteServiceAsync getRemoteServiceAsync() {

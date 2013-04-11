@@ -5,7 +5,7 @@ import java.util.List;
 
 public interface IUserDAO {
 //--------------------------------------------------------------------------------------------------
-public User findById(final Integer id);
+public User findById(final Integer userId);
 public User findByUserIdAndPassword(final String userId, final String password);
 public Integer save(final User user);
 public List<User> selectAllUsers();

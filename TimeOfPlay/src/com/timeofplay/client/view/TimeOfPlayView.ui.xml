@@ -6,38 +6,20 @@
   xmlns:top='urn:import:com.timeofplay.client.widget'>
   <g:ResizeLayoutPanel ui:field='topLevelPanel'>
     <g:TabLayoutPanel
+      ui:field='tabLayoutPanel'
       barUnit='EM'
       barHeight='3'>
       <g:tab>
         <g:header>My Account</g:header>
-        <g:HeaderPanel>
-          <top:UserEditorWidget ui:field='userEditorWidget'/>
-          <g:SplitLayoutPanel>
-            <g:west size='100'>
-              <g:HeaderPanel>
-                <g:Label>People that I know</g:Label>
-                <c:DataGrid ui:field='allCircleUserDataGrid'/>
-              </g:HeaderPanel>
-            </g:west>
-            <g:center>
-              <g:HeaderPanel>
-                <g:HorizontalPanel>
-                  <g:Label>Activities that I like</g:Label>
-                  <g:Button>Add Activity</g:Button>
-                </g:HorizontalPanel>
-                <g:ListBox></g:ListBox>
-              </g:HeaderPanel>
-            </g:center>
-          </g:SplitLayoutPanel>
-        </g:HeaderPanel>
+        <g:ResizeLayoutPanel ui:field='accountTabPanel'/>
       </g:tab>
       <g:tab>
         <g:header>My Circles</g:header>
-        <g:ResizeLayoutPanel/>
+        <g:ResizeLayoutPanel ui:field='circlesTabPanel'/>
       </g:tab>
       <g:tab>
         <g:header>My Events</g:header>
-        <g:ResizeLayoutPanel/>
+        <g:ResizeLayoutPanel ui:field='eventsTabPanel'/>
       </g:tab>
     </g:TabLayoutPanel>
   </g:ResizeLayoutPanel>

@@ -1,0 +1,13 @@
+<ui:UiBinder
+  xmlns:ui='urn:ui:com.google.gwt.uibinder'
+  xmlns:g='urn:import:com.google.gwt.user.client.ui'
+  xmlns:top='urn:import:com.timeofplay.client.widget'>
+  <g:SplitLayoutPanel>
+    <g:west size='200'>
+      <top:CirclesTreeWidget ui:field='circlesTreeWidget'/>
+    </g:west>
+    <g:center>
+      <g:Label>The circle editor goes here</g:Label>
+    </g:center>
+  </g:SplitLayoutPanel>
+</ui:UiBinder>

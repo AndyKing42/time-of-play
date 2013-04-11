@@ -18,7 +18,7 @@ public class UserEditorWidget extends Composite implements Editor<IUserProxy> {
 @UiField
 TextBox                         screenName;
 @UiField
-TextBox                         userId;
+TextBox                         userLoginId;
 
 private final IClientFactory    _clientFactory;
 private IUserProxy              _originalUser;
@@ -50,7 +50,7 @@ public void editUser(final IUserProxy user) {
   if (_updateType == EUpdateType.Insert) {
     _user = _clientFactory.getTimeOfPlayCache().newUser(_userRequestContext);
     _userEditorDriver.edit(_user, _userRequestContext);
-    userId.setFocus(true);
+    userLoginId.setFocus(true);
   }
   else {
     _user = _userRequestContext.edit(user);
@@ -65,7 +65,7 @@ public IUserProxy getUser() {
 public boolean isChanged() {
   return _user != null && _userRequestContext != null &&
          (_userEditorDriver.isDirty() || _userRequestContext.isChanged()) &&
-         _user.getUserId() != null && _user.getUserId().trim().length() > 0;
+         _user.getUserLoginId() != null && _user.getUserLoginId().trim().length() > 0;
 } // isChanged()
 //--------------------------------------------------------------------------------------------------
 }
