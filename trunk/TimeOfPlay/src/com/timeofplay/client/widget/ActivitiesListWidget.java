@@ -2,12 +2,12 @@ package com.timeofplay.client.widget;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
-import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.ResizeComposite;
 import com.google.gwt.user.client.ui.Widget;
 import com.timeofplay.client.IClientFactory;
 import com.timeofplay.client.ITimeOfPlayClientEnums.EUpdateType;
 
-public class ActivitiesListWidget extends Composite {
+public class ActivitiesListWidget extends ResizeComposite {
 //--------------------------------------------------------------------------------------------------
 
 private final IClientFactory _clientFactory;

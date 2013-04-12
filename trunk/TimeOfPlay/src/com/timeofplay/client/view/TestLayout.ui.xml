@@ -1,0 +1,70 @@
+<!DOCTYPE ui:UiBinder SYSTEM 'http://dl.google.com/gwt/DTD/xhtml.ent'>
+<ui:UiBinder
+  xmlns:ui='urn:ui:com.google.gwt.uibinder'
+  xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+  <g:ResizeLayoutPanel ui:field='outerPanel'>
+    <!--
+      <g:TabLayoutPanel
+      ui:field='tabLayoutPanel'
+      barUnit='EM'
+      barHeight='3'>
+      <g:tab>
+      <g:header>Tab 1</g:header>
+      <g:ResizeLayoutPanel>
+      <g:ResizeLayoutPanel>
+      <g:HeaderPanel>
+      <g:Label>Header</g:Label>
+      <g:ResizeLayoutPanel>
+    -->
+    <g:SplitLayoutPanel>
+      <g:west size='300'>
+        <g:HeaderPanel>
+          <g:Label>West Header</g:Label>
+          <g:FlowPanel>
+            <g:Label>Label 1</g:Label>
+            <g:Label>Label 2</g:Label>
+            <g:Label>Label 3</g:Label>
+            <g:Label>Label 4</g:Label>
+            <g:Label>Label 5</g:Label>
+            <g:Label>Label 6</g:Label>
+            <g:Label>Label 7</g:Label>
+          </g:FlowPanel>
+        </g:HeaderPanel>
+      </g:west>
+      <g:center>
+        <g:ResizeLayoutPanel>
+          <g:HeaderPanel>
+            <g:HorizontalPanel>
+              <g:Label>Center Header</g:Label>
+            </g:HorizontalPanel>
+            <g:VerticalPanel>
+              <g:Label>Label 1</g:Label>
+              <g:Label>Label 2</g:Label>
+              <g:Label>Label 3</g:Label>
+              <g:Label>Label 4</g:Label>
+              <g:Label>Label 5</g:Label>
+              <g:Label>Label 6</g:Label>
+              <g:Label>Label 7</g:Label>
+            </g:VerticalPanel>
+          </g:HeaderPanel>
+        </g:ResizeLayoutPanel>
+      </g:center>
+    </g:SplitLayoutPanel>
+    <!--
+      </g:ResizeLayoutPanel>
+      </g:HeaderPanel>
+      </g:ResizeLayoutPanel>
+      </g:ResizeLayoutPanel>
+      </g:tab>
+      <g:tab>
+      <g:header>Tab 2</g:header>
+      <g:ResizeLayoutPanel/>
+      </g:tab>
+      <g:tab>
+      <g:header>Tab 3</g:header>
+      <g:ResizeLayoutPanel/>
+      </g:tab>
+      </g:TabLayoutPanel>
+    -->
+  </g:ResizeLayoutPanel>
+</ui:UiBinder>
