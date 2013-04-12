@@ -21,7 +21,7 @@ interface IAccountTabPanelBinder extends UiBinder<Widget, AccountTabPanel> { //
 //==================================================================================================
 public AccountTabPanel(final IClientFactory clientFactory) {
   activitiesListWidget = new ActivitiesListWidget(clientFactory);
-  circleUsersGridWidget = new CircleUsersGridWidget(clientFactory, 0);
+  circleUsersGridWidget = new CircleUsersGridWidget(clientFactory, "People that I know", 0);
   userEditorWidget = new UserEditorWidget(clientFactory);
   final IAccountTabPanelBinder binder = GWT.create(IAccountTabPanelBinder.class);
   initWidget(binder.createAndBindUi(this));

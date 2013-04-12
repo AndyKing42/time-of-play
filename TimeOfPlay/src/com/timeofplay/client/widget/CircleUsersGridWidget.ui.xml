@@ -3,7 +3,9 @@
   xmlns:g='urn:import:com.google.gwt.user.client.ui'
   xmlns:c='urn:import:com.google.gwt.user.cellview.client'>
   <g:HeaderPanel>
-    <g:Label ui:field='circleDescLabel'/>
-    <c:DataGrid ui:field='circleUserDataGrid'/>
+    <g:Label ui:field='headingLabel'/>
+    <g:ResizeLayoutPanel>
+      <c:DataGrid ui:field='circleUsersDataGrid'/>
+    </g:ResizeLayoutPanel>
   </g:HeaderPanel>
 </ui:UiBinder>
