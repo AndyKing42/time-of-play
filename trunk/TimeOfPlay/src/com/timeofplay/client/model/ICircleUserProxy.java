@@ -11,6 +11,7 @@ public interface ICircleUserProxy extends EntityProxy {
 int getCircleId();
 int getId();
 int getMemberUserId();
+IUserProxy getMemberUser();
 int getVersion();
 //--------------------------------------------------------------------------------------------------
 void setCircleId(final Integer circleId);

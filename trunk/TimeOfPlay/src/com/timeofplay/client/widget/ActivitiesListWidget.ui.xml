@@ -7,6 +7,8 @@
       <g:Label>Activities that I like</g:Label>
       <g:Button>Add Activity</g:Button>
     </g:HorizontalPanel>
-    <g:ListBox></g:ListBox>
+    <g:ResizeLayoutPanel>
+      <g:ListBox></g:ListBox>
+    </g:ResizeLayoutPanel>
   </g:HeaderPanel>
 </ui:UiBinder>

@@ -2,15 +2,19 @@
   xmlns:ui='urn:ui:com.google.gwt.uibinder'
   xmlns:g='urn:import:com.google.gwt.user.client.ui'
   xmlns:top='urn:import:com.timeofplay.client.widget'>
-  <g:HeaderPanel>
-    <top:UserEditorWidget ui:field='userEditorWidget'/>
-    <g:SplitLayoutPanel>
-      <g:west size='100'>
-        <top:CircleUsersGridWidget ui:field='circleUsersGridWidget'/>
-      </g:west>
-      <g:center>
-        <top:ActivitiesListWidget ui:field='activitiesListWidget'/>
-      </g:center>
-    </g:SplitLayoutPanel>
-  </g:HeaderPanel>
+  <g:ResizeLayoutPanel>
+    <g:HeaderPanel>
+      <top:UserEditorWidget ui:field='userEditorWidget'/>
+      <g:ResizeLayoutPanel>
+        <g:SplitLayoutPanel>
+          <g:west size='300'>
+            <top:CircleUsersGridWidget ui:field='circleUsersGridWidget'/>
+          </g:west>
+          <g:center>
+            <top:ActivitiesListWidget ui:field='activitiesListWidget'/>
+          </g:center>
+        </g:SplitLayoutPanel>
+      </g:ResizeLayoutPanel>
+    </g:HeaderPanel>
+  </g:ResizeLayoutPanel>
 </ui:UiBinder>

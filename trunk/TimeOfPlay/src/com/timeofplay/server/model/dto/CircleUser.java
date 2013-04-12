@@ -16,6 +16,7 @@ private int     _circleId;
 @Column(name = "CircleUserId", nullable = false, unique = true)
 @Id
 private Integer _circleUserId;
+private User    _memberUser;
 @Column(name = "MemberUserId", nullable = false)
 private Integer _memberUserId;
 @Column(name = "Version", nullable = false)
@@ -46,6 +47,10 @@ public int getCircleId() {
 public int getId() {
   return _circleUserId;
 } // getId()
+//--------------------------------------------------------------------------------------------------
+public User getMemberUser() {
+  return _memberUser;
+} // getMemberUser()
 //--------------------------------------------------------------------------------------------------
 public int getMemberUserId() {
   return _memberUserId;
