@@ -31,7 +31,10 @@ public void onModuleLoad() {
   });
   final TimeOfPlayView timeOfPlayView = new TimeOfPlayView();
   timeOfPlayView.initialize(clientFactory);
-  RootLayoutPanel.get().add(timeOfPlayView.getTopLevelPanel());
+  RootLayoutPanel.get().add(timeOfPlayView.getOuterPanel());
+  //  final TestLayout testLayout = new TestLayout();
+  //  testLayout.initialize();
+  //  RootLayoutPanel.get().add(testLayout.getOuterPanel());
 } // onModuleLoad()
 //--------------------------------------------------------------------------------------------------
 }

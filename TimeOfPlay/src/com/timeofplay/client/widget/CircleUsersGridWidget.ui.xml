@@ -2,10 +2,11 @@
   xmlns:ui='urn:ui:com.google.gwt.uibinder'
   xmlns:g='urn:import:com.google.gwt.user.client.ui'
   xmlns:c='urn:import:com.google.gwt.user.cellview.client'>
-  <g:HeaderPanel>
-    <g:Label ui:field='headingLabel'/>
-    <g:ResizeLayoutPanel>
-      <c:DataGrid ui:field='circleUsersDataGrid'/>
-    </g:ResizeLayoutPanel>
+  <g:HeaderPanel ui:field='headerPanel'>
+    <g:Label ui:field='headingLabel' wordWrap='false'/>
+    <c:DataGrid
+      ui:field='circleUsersDataGrid'
+      width='100%'
+      height='100%'/>
   </g:HeaderPanel>
 </ui:UiBinder>

@@ -17,11 +17,11 @@ import com.timeofplay.shared.IRemoteServiceAsync;
 public class LoginWidget extends PopupPanel {
 //--------------------------------------------------------------------------------------------------
 @UiField
-Button                 okButton;
+Button                       okButton;
 @UiField
-PasswordTextBox        passwordTextBox;
+PasswordTextBox              passwordTextBox;
 @UiField
-TextBox                userIdTextBox;
+TextBox                      userIdTextBox;
 
 private final IClientFactory _clientFactory;
 //==================================================================================================

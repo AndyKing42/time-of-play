@@ -5,13 +5,13 @@ import com.google.gwt.event.logical.shared.SelectionEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.ResizeComposite;
 import com.google.gwt.user.client.ui.ResizeLayoutPanel;
 import com.google.gwt.user.client.ui.TabLayoutPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.timeofplay.client.IClientFactory;
 
-public class TimeOfPlayView extends Composite {
+public class TimeOfPlayView extends ResizeComposite {
 //--------------------------------------------------------------------------------------------------
 @UiField
 ResizeLayoutPanel      accountTabPanel;
@@ -20,18 +20,16 @@ ResizeLayoutPanel      circlesTabPanel;
 @UiField
 ResizeLayoutPanel      eventsTabPanel;
 @UiField
-TabLayoutPanel         tabLayoutPanel;
-@UiField
-ResizeLayoutPanel      topLevelPanel;
+TabLayoutPanel         outerPanel;
 
 private IClientFactory _clientFactory;
 //==================================================================================================
 public interface ITimeOfPlayViewUiBinder extends UiBinder<Widget, TimeOfPlayView> { //
 } // interface ITimeOfPlayViewUiBinder
 //==================================================================================================
-public ResizeLayoutPanel getTopLevelPanel() {
-  return topLevelPanel;
-} // getTopLevelPanel()
+public TabLayoutPanel getOuterPanel() {
+  return outerPanel;
+} // getOuterPanel()
 //--------------------------------------------------------------------------------------------------
 public void initialize(final IClientFactory clientFactory) {
   _clientFactory = clientFactory;
@@ -40,8 +38,8 @@ public void initialize(final IClientFactory clientFactory) {
   accountTabPanel.add(_clientFactory.getAccountTabPanel());
 } // initialize()
 //--------------------------------------------------------------------------------------------------
-@UiHandler("tabLayoutPanel")
-public void onTabLayoutPanelSelection(final SelectionEvent<Integer> event) {
+@UiHandler("outerPanel")
+public void onOuterPanelSelection(final SelectionEvent<Integer> event) {
   switch (event.getSelectedItem()) {
     case 0:
       if (accountTabPanel.getWidget() == null) {
@@ -59,6 +57,6 @@ public void onTabLayoutPanelSelection(final SelectionEvent<Integer> event) {
       }
       break;
   }
-} // onTabLayoutPanelSelection()
+} // onOuterPanelSelection()
 //--------------------------------------------------------------------------------------------------
 }

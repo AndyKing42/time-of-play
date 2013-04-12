@@ -4,10 +4,10 @@
   xmlns:c='urn:import:com.google.gwt.user.cellview.client'>
   <g:HeaderPanel>
     <g:HorizontalPanel>
-      <g:Label>Activities that I like</g:Label>
+      <g:Label wordWrap='false'>Activities that I like</g:Label>
       <g:Button>Add Activity</g:Button>
     </g:HorizontalPanel>
-    <g:ResizeLayoutPanel>
+    <g:ResizeLayoutPanel height='100%'>
       <g:ListBox></g:ListBox>
     </g:ResizeLayoutPanel>
   </g:HeaderPanel>
