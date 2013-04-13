@@ -3,7 +3,9 @@
   xmlns:g='urn:import:com.google.gwt.user.client.ui'
   xmlns:c='urn:import:com.google.gwt.user.cellview.client'>
   <g:HeaderPanel ui:field='headerPanel'>
-    <g:Label ui:field='headingLabel' wordWrap='false'/>
+    <g:Label
+      ui:field='headingLabel'
+      wordWrap='false'/>
     <c:DataGrid
       ui:field='circleUsersDataGrid'
       width='100%'
