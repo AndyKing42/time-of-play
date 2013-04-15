@@ -1,10 +1,8 @@
 package com.timeofplay.client.widget;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.event.logical.shared.ResizeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.ResizeComposite;
 import com.google.gwt.user.client.ui.Widget;
 import com.timeofplay.client.IClientFactory;
@@ -29,11 +27,4 @@ public AccountTabPanel(final IClientFactory clientFactory) {
   initWidget(binder.createAndBindUi(this));
 } // AccountTabPanel()
 //--------------------------------------------------------------------------------------------------
-@UiHandler("contentPanel")
-public void onContentPanelResize(final ResizeEvent event) {
-  final int height = event.getHeight();
-  if (height == -123) {
-    return;
-  }
-} // createOuterPanelResizeHandler()
 }
